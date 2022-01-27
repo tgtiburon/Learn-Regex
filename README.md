@@ -151,15 +151,39 @@ A quantifier specifies how often a character or group appears in the string.  I 
     Brackets mark a set of characters to match.  If you place a ^ inside the brackets it means match anything except for the characters in the brackets.
     Example: [abcd] matches -> "ark"   matches a
     Example 2: [^abcd] -> "ark" matches r
-    
+
 
 ### Greedy and Lazy Match
+    In greedy mode a quantified character is repeated as many times as possible.  Greedy mode is the default behavior of regex. It will return the largest string it can match.
+
+
+    In lazy mode a quantifier is used as few times as possible. It will return the shortest string it can match. To make a quantifier lazy add a ? to it.
+
+    Examples:
+
+    Greedy Quantifier           Lazy Quantifier
+        *                           *?
+        +                           +?
 
 ### Boundaries
 
+    A boundary in regex is a position between \w and \W. An easier way to think of this is that a word boundary is found right before the start of a word and right at the end of the word. Whereas a non-word boundary is found between the characters within a word.
+
+    -/b     The cat walked. putting x at each spot that would match xTheX xcatx xwalkedx.
+    -/B     The cat walked. putting an x at each spot it would match  Txhxe cxaxt wxaxlxkxexd.
+
+
 ### Back-references
 
+    A back-reference is what we call a group that had been captured but was stored in memory for later use.
+
 ### Look-ahead and Look-behind
+
+    A look-ahead is when text is followed by a given pattern.
+    Example: ABCDEF   ABC(?=DEF) matches ABC.
+    
+    A look-behind is when the text precedes a given pattern.
+    Example: ABCDEF  (?<=ABC)DEF matches DEF.
 
 ## Author
 
