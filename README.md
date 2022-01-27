@@ -135,34 +135,39 @@ A quantifier specifies how often a character or group appears in the string.  I 
 
 ### Grouping and Capturing
 
-    Grouping is a way to treat multiple characters as a single group.  You make this happen by placing the characters you want grouped together  
-    within a set of parenthesis.
+    Grouping is a way to treat multiple characters as a single group.  You make   
+    this happen by placing the characters you want grouped together within a set   
+    of parenthesis.
     Example: (frog) is a single group containing the 4 letters f r o and g.
 
     Capturing is when you use 1 or more  groups to match a string.
 
     Example: Regex for email addresses has many groups for capturing.
     
-    (?:[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*|"(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21\x23-\x5b\x5d-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-  
-    \x7f])*")@(?:(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?|\[(?:(?:(2(5[0-5]|[0-4][0-9])|1[0-9][0-9]|[1-9]?[0-9]))\.){3}(?:  
-    (2(5[0-5]|[0-4][0-9])|1[0-9][0-9]|[1-9]?[0-9])|[a-z0-9-]*[a-z0-9]:(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21-\x5a\x53-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])  
-    +)\])
+    (?:[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*|"(?:[\x0  
+    1-\x08\x0b\x0c\x0e-\x1f\x21\x23-\x5b\x5d-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-  
+    \x7f])*")@(?:(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z  
+    0-9])?|\[(?:(?:(2(5[0-5]|[0-4][0-9])|1[0-9][0-9]|[1-9]?[0-9]))\.){3}(?:  
+    (2(5[0-5]|[0-4][0-9])|1[0-9][0-9]|[1-9]?[0-9])|[a-z0-9-]*[a-z0-9]:(?:[\x01-\x  
+    08\x0b\x0c\x0e-\x1f\x21-\x5a\x53-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])+)\])
 
     
 
 ### Bracket Expressions
 
-    Brackets mark a set of characters to match.  If you place a ^ inside the brackets it means match anything except for the characters in the brackets.
+    Brackets mark a set of characters to match.  If you place a ^ inside the  
+     brackets it means match anything except for the characters in the brackets.
     Example: [abcd] matches -> "ark"   matches a
     Example 2: [^abcd] -> "ark" matches r
 
 
 ### Greedy and Lazy Match
-    In greedy mode a quantified character is repeated as many times as possible.  Greedy mode is the default behavior of regex. It will return the largest  
-    string it can match.
+    In greedy mode a quantified character is repeated as many times as possible.  Greedy  
+     mode is the default behavior of regex. It will return the largest string it can match.
 
 
-    In lazy mode a quantifier is used as few times as possible. It will return the shortest string it can match. To make a quantifier lazy add a ? to it.
+    In lazy mode a quantifier is used as few times as possible. It will return the shortest   
+    string it can match. To make a quantifier lazy add a ? to it.
 
     Examples:
 
@@ -172,8 +177,9 @@ A quantifier specifies how often a character or group appears in the string.  I 
 
 ### Boundaries
 
-    A boundary in regex is a position between \w and \W. An easier way to think of this is that a word boundary is found right before the start of a word and  
-     right at the end of the word. Whereas a non-word boundary is found between the characters within a word.
+    A boundary in regex is a position between \w and \W. An easier way to think of this is that   
+    a word boundary is found right before the start of a word and right at the end of the word.  
+     Whereas a non-word boundary is found between the characters within a word.
 
     -/b     The cat walked. putting x at each spot that would match xTheX xcatx xwalkedx.
     -/B     The cat walked. putting an x at each spot it would match  Txhxe cxaxt wxaxlxkxexd.
@@ -193,8 +199,9 @@ A quantifier specifies how often a character or group appears in the string.  I 
 
 ## Author
 
- Highly effective educator with more than 25 years of experience teaching science and developing meaningful relationships with students. Tenacious problem solver  
-  and creative thinker who will help you reach your full-stack web development goals.
+ Highly effective educator with more than 25 years of experience teaching science and developing  
+ meaningful relationships with students. Tenacious problem solver and creative thinker who will  
+ help you reach your full-stack web development goals.
 
 If you have any questions about this project feel free to email me at <tg.tiburon@gmail.com>.  
 
